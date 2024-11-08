@@ -8,3 +8,4 @@
 6. Testes de Performance:
 7. Mocks e Stubs:
 8. Estratégias de Teste:
+9. Execução de Testes e Relatórios:
