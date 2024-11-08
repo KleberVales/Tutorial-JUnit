@@ -10,8 +10,17 @@
 - Anotações principais: @Test, @BeforeEach, @AfterEach, @BeforeAll, @AfterAll.
 - Assertivas: assertEquals(), assertNotNull(), assertTrue(), etc.
   
-4. Anotações do JUnit 5:
-5. Testes Parametrizados:
+3. Anotações do JUnit 5:
+- @Test: Definindo métodos de teste.
+- @BeforeEach e @AfterEach: Inicializando e limpando antes e depois de cada teste.
+- @BeforeAll e @AfterAll: Inicialização e limpeza de uma vez para toda a classe de teste.
+- @Disabled: Desabilitando um teste.
+- @ParameterizedTest e @ValueSource: Para testes com parâmetros.
+  
+4. Testes Parametrizados:
+- Como usar o @ParameterizedTest para rodar o mesmo teste com diferentes valores.
+- Tipos de fontes de dados: @ValueSource, @EnumSource, @MethodSource.
+  
 6. Exceções e Erros:
 7. Testes de Performance:
 8. Mocks e Stubs:
