@@ -5,3 +5,5 @@
 3. Anotações do JUnit 5:
 4. Testes Parametrizados:
 5. Exceções e Erros:
+6. Testes de Performance:
+7. Mocks e Stubs:
