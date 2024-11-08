@@ -2,7 +2,14 @@
 
 1. Introdução ao JUnit:
 - O que é o JUnit e por que usá-lo.
-3. Estrutura Básica de Testes:
+- Arquitetura e principais componentes do JUnit.
+- Histórico do JUnit (JUnit 3, 4 e 5).
+  
+2. Estrutura Básica de Testes:
+- Criando uma classe de testes no JUnit.
+- Anotações principais: @Test, @BeforeEach, @AfterEach, @BeforeAll, @AfterAll.
+- Assertivas: assertEquals(), assertNotNull(), assertTrue(), etc.
+  
 4. Anotações do JUnit 5:
 5. Testes Parametrizados:
 6. Exceções e Erros:
