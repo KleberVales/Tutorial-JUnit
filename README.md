@@ -7,3 +7,4 @@
 5. Exceções e Erros:
 6. Testes de Performance:
 7. Mocks e Stubs:
+8. Estratégias de Teste:
