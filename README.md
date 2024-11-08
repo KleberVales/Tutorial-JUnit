@@ -9,3 +9,4 @@
 7. Mocks e Stubs:
 8. Estratégias de Teste:
 9. Execução de Testes e Relatórios:
+10. Testando o Código Assíncrono e Concorrente:
