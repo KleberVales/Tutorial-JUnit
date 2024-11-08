@@ -21,9 +21,25 @@
 - Como usar o @ParameterizedTest para rodar o mesmo teste com diferentes valores.
 - Tipos de fontes de dados: @ValueSource, @EnumSource, @MethodSource.
   
-6. Exceções e Erros:
-7. Testes de Performance:
-8. Mocks e Stubs:
-9. Estratégias de Teste:
-10. Execução de Testes e Relatórios:
-11. Testando o Código Assíncrono e Concorrente:
+5. Exceções e Erros:
+- Testando exceções com assertThrows().
+- Verificando mensagens de erro.
+  
+6. Testes de Performance:
+- Como realizar testes de tempo de execução com @Test e medir o tempo com assertTimeout().
+  
+7. Mocks e Stubs:
+- Utilizando frameworks como Mockito para criar mocks e stubs em seus testes JUnit.
+- Como testar interações com dependências externas.
+  
+8. Estratégias de Teste:
+- Testes unitários vs Testes de integração.
+- Cobertura de código e boas práticas em testes.
+- TDD (Test-Driven Development): Como aplicar em seu fluxo de trabalho.
+  
+9. Execução de Testes e Relatórios:
+- Como executar os testes em IDEs como IntelliJ, Eclipse, ou via linha de comando.
+- Gerando relatórios de execução de testes.
+
+10. Testando o Código Assíncrono e Concorrente:
+- Estratégias para testar código assíncrono e threads usando JUnit.
