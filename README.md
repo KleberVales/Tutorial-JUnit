@@ -138,6 +138,45 @@ Criar uma classe de testes no JUnit envolve a definição de métodos que testam
 
   ![imagens/classedeteste.png](imagens/classedeteste.png)
 
+- Classe de Testes com JUnit
+
+Aqui está como você pode criar uma classe de teste para a classe Calculadora:
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+public class CalculadoraTest {
+
+    private Calculadora calculadora;
+
+    @BeforeEach
+    void setup() {
+        calculadora = new Calculadora();
+    }
+
+    @Test
+    void testSoma() {
+        int resultado = calculadora.soma(5, 3);
+        assertEquals(8, resultado, "A soma de 5 e 3 deveria ser 8");
+    }
+
+    @Test
+    void testDivisao() {
+        int resultado = calculadora.divisao(10, 2);
+        assertEquals(5, resultado, "A divisão de 10 por 2 deveria ser 5");
+    }
+
+    @Test
+    void testDivisaoPorZero() {
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+            calculadora.divisao(10, 0);
+        });
+        assertEquals("Divisão por zero não é permitida", exception.getMessage(), "A mensagem de exceção deveria ser 'Divisão por zero não é permitida'");
+    }
+}
+
+
 ### Anotações principais: @Test, @BeforeEach, @AfterEach, @BeforeAll, @AfterAll.
 ### Assertivas: assertEquals(), assertNotNull(), assertTrue(), etc.
   
