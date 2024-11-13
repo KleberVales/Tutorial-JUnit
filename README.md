@@ -208,6 +208,10 @@ Usar @ParameterizedTest em conjunto com fontes de parâmetros como @ValueSource 
 
 No JUnit, lidar com exceções e erros faz parte da criação de testes robustos e eficazes. Aqui está um guia sobre como testar cenários que envolvem exceções e erros:
 
+1. Verificando Exceções com assertThrows
+
+O método assertThrows() é uma forma comum e recomendada de verificar se uma exceção é lançada em um teste. Ele é utilizado em JUnit 5 e é útil para testar métodos que devem lançar exceções específicas.
+
 ### Testando exceções com assertThrows().
 ### Verificando mensagens de erro.
   
