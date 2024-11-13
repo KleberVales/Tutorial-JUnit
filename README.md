@@ -216,6 +216,14 @@ O método assertThrows() é uma forma comum e recomendada de verificar se uma ex
 
     ![imagens/erros.png](imagens/erros.png)
 
+2. Utilizando @Test(expected = ...) (JUnit 4)
+
+No JUnit 4, para verificar se uma exceção é lançada, você pode usar a anotação @Test com o atributo expected.
+
+Exemplo:
+
+![imagens/erros2.png](imagens/erros2.png)
+
 
 ### Testando exceções com assertThrows().
 ### Verificando mensagens de erro.
