@@ -142,8 +142,8 @@ Criar uma classe de testes no JUnit envolve a definição de métodos que testam
 
 Aqui está como você pode criar uma classe de teste para a classe Calculadora:
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.BeforeEach;\
+import org.junit.jupiter.api.Test;\
 import static org.junit.jupiter.api.Assertions.*;
 
 public class CalculadoraTest {
