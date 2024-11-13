@@ -232,8 +232,13 @@ Exemplo:
 
 ![imagens/erros3.png](imagens/erros3.png)
 
-### Testando exceções com assertThrows().
-### Verificando mensagens de erro.
+4. Capturando Exceções com ExpectedException (JUnit 4)
+
+JUnit 4 também oferece a classe ExpectedException para verificar exceções de forma mais detalhada.
+
+Exemplo:
+
+![imagens/erros4.png](imagens/erros4.png)
   
 ## Testes de Performance:
 ### Como realizar testes de tempo de execução com @Test e medir o tempo com assertTimeout().
