@@ -129,6 +129,15 @@ A estrutura básica de testes usando JUnit, que é um framework de teste para ap
 
     
 ### Criando uma classe de testes no JUnit.
+
+Criar uma classe de testes no JUnit envolve a definição de métodos que testam funcionalidades específicas do código que você quer validar. Vou mostrar um exemplo prático de como criar uma classe de teste no JUnit 5 (JUnit Jupiter) para um método simples.
+
+- Cenário de Teste
+
+  Vamos supor que você tenha a seguinte classe Calculadora com métodos básicos de adição e divisão:
+
+  ![imagens/classedeteste.png](imagens/classedeteste.png)
+
 ### Anotações principais: @Test, @BeforeEach, @AfterEach, @BeforeAll, @AfterAll.
 ### Assertivas: assertEquals(), assertNotNull(), assertTrue(), etc.
   
