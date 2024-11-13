@@ -196,15 +196,10 @@ Os testes parametrizados no JUnit permitem executar um teste múltiplas vezes co
 
   Certifique-se de que o projeto inclui as dependências do JUnit 5 e do módulo de testes parametrizados:
 
-  <dependency>
-    <groupId>org.junit.jupiter</groupId>
-    <artifactId>junit-jupiter-params</artifactId>
-    <version>5.x.x</version>
-    <scope>test</scope>
-</dependency>
+    ![imagens/testeparametrizado.png](imagens/testeparametrizado.png)
 
 
-Vamos estender o exemplo da classe Calculadora para usar testes parametrizados para o método soma.
+
   
 ### Como usar o @ParameterizedTest para rodar o mesmo teste com diferentes valores.
 ### Tipos de fontes de dados: @ValueSource, @EnumSource, @MethodSource.
