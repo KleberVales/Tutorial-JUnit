@@ -138,6 +138,45 @@ Criar uma classe de testes no JUnit envolve a definição de métodos que testam
 
   ![imagens/classedeteste.png](imagens/classedeteste.png)
 
+- Classe de Testes com JUnit
+
+Aqui está como você pode criar uma classe de teste para a classe Calculadora:
+
+import org.junit.jupiter.api.BeforeEach;\
+import org.junit.jupiter.api.Test;\
+import static org.junit.jupiter.api.Assertions.*;
+
+public class CalculadoraTest {
+
+    private Calculadora calculadora;
+
+    @BeforeEach
+    void setup() {
+        calculadora = new Calculadora();
+    }
+
+    @Test
+    void testSoma() {
+        int resultado = calculadora.soma(5, 3);
+        assertEquals(8, resultado, "A soma de 5 e 3 deveria ser 8");
+    }
+
+    @Test
+    void testDivisao() {
+        int resultado = calculadora.divisao(10, 2);
+        assertEquals(5, resultado, "A divisão de 10 por 2 deveria ser 5");
+    }
+
+    @Test
+    void testDivisaoPorZero() {
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+            calculadora.divisao(10, 0);
+        });
+        assertEquals("Divisão por zero não é permitida", exception.getMessage(), "A mensagem de exceção deveria ser 'Divisão por zero não é permitida'");
+    }
+}
+
+
 ### Anotações principais: @Test, @BeforeEach, @AfterEach, @BeforeAll, @AfterAll.
 ### Assertivas: assertEquals(), assertNotNull(), assertTrue(), etc.
   
@@ -149,7 +188,20 @@ Criar uma classe de testes no JUnit envolve a definição de métodos que testam
 ### @ParameterizedTest e @ValueSource: Para testes com parâmetros.
   
 ## Testes Parametrizados:
+
+Os testes parametrizados no JUnit permitem executar um teste múltiplas vezes com diferentes parâmetros de entrada, facilitando a verificação de múltiplos cenários sem a necessidade de duplicar código. No JUnit 5, isso é feito usando a anotação @ParameterizedTest junto com fontes de parâmetros, como @ValueSource, @CsvSource, e outros.
+
+- Exemplo de Testes Parametrizados
+  * Dependências
+
+  Certifique-se de que o projeto inclui as dependências do JUnit 5 e do módulo de testes parametrizados:
+
+    ![imagens/testeparametrizado.png](imagens/testeparametrizado.png)
+  
 ### Como usar o @ParameterizedTest para rodar o mesmo teste com diferentes valores.
+
+Usar @ParameterizedTest em conjunto com fontes de parâmetros como @ValueSource e @CsvSource permite executar o mesmo método de teste com diferentes conjuntos de dados. Vou explicar como isso funciona com exemplos práticos.
+
 ### Tipos de fontes de dados: @ValueSource, @EnumSource, @MethodSource.
   
 ## Exceções e Erros:
