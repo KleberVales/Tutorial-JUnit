@@ -197,11 +197,11 @@ Os testes parametrizados no JUnit permitem executar um teste múltiplas vezes co
   Certifique-se de que o projeto inclui as dependências do JUnit 5 e do módulo de testes parametrizados:
 
     ![imagens/testeparametrizado.png](imagens/testeparametrizado.png)
-
-
-
   
 ### Como usar o @ParameterizedTest para rodar o mesmo teste com diferentes valores.
+
+Usar @ParameterizedTest em conjunto com fontes de parâmetros como @ValueSource e @CsvSource permite executar o mesmo método de teste com diferentes conjuntos de dados. Vou explicar como isso funciona com exemplos práticos.
+
 ### Tipos de fontes de dados: @ValueSource, @EnumSource, @MethodSource.
   
 ## Exceções e Erros:
