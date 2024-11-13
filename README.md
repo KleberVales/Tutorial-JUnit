@@ -224,6 +224,13 @@ Exemplo:
 
 ![imagens/erros2.png](imagens/erros2.png)
 
+3. Verificando Mensagens de Erro com try-catch (JUnit 4 e 5)
+
+Às vezes, pode ser necessário verificar a mensagem da exceção de forma mais detalhada.
+
+Exemplo:
+
+![imagens/erros3.png](imagens/erros3.png)
 
 ### Testando exceções com assertThrows().
 ### Verificando mensagens de erro.
