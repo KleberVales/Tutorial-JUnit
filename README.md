@@ -212,6 +212,11 @@ No JUnit, lidar com exceções e erros faz parte da criação de testes robustos
 
 O método assertThrows() é uma forma comum e recomendada de verificar se uma exceção é lançada em um teste. Ele é utilizado em JUnit 5 e é útil para testar métodos que devem lançar exceções específicas.
 
+- Exemplo de uso:
+
+    ![imagens/erros.png](imagens/erros.png)
+
+
 ### Testando exceções com assertThrows().
 ### Verificando mensagens de erro.
   
