@@ -205,6 +205,9 @@ Usar @ParameterizedTest em conjunto com fontes de parâmetros como @ValueSource 
 ### Tipos de fontes de dados: @ValueSource, @EnumSource, @MethodSource.
   
 ## Exceções e Erros:
+
+No JUnit, lidar com exceções e erros faz parte da criação de testes robustos e eficazes. Aqui está um guia sobre como testar cenários que envolvem exceções e erros:
+
 ### Testando exceções com assertThrows().
 ### Verificando mensagens de erro.
   
