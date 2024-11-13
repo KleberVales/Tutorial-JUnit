@@ -188,6 +188,24 @@ public class CalculadoraTest {
 ### @ParameterizedTest e @ValueSource: Para testes com parâmetros.
   
 ## Testes Parametrizados:
+
+Os testes parametrizados no JUnit permitem executar um teste múltiplas vezes com diferentes parâmetros de entrada, facilitando a verificação de múltiplos cenários sem a necessidade de duplicar código. No JUnit 5, isso é feito usando a anotação @ParameterizedTest junto com fontes de parâmetros, como @ValueSource, @CsvSource, e outros.
+
+- Exemplo de Testes Parametrizados
+  * Dependências
+
+  Certifique-se de que o projeto inclui as dependências do JUnit 5 e do módulo de testes parametrizados:
+
+  <dependency>
+    <groupId>org.junit.jupiter</groupId>
+    <artifactId>junit-jupiter-params</artifactId>
+    <version>5.x.x</version>
+    <scope>test</scope>
+</dependency>
+
+
+Vamos estender o exemplo da classe Calculadora para usar testes parametrizados para o método soma.
+  
 ### Como usar o @ParameterizedTest para rodar o mesmo teste com diferentes valores.
 ### Tipos de fontes de dados: @ValueSource, @EnumSource, @MethodSource.
   
